@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charmante maison à louer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,.1);
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .infos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap: 15px;
+        }
+
+        .info {
+            background: #f8f8f8;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .price {
+            font-size: 2em;
+            color: #27ae60;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        ul {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        .contact {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: #27ae60;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #219150;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Charmante maison à louer</h1>
+    <p>Maison 3 façades sans jardin de 150m² situee dans une rue en cul de sac. 
+</p>
+</header>
+
+<div class="container">
+
+    <div class="gallery">
+        <img src="images/photo1.jpg" alt="Maison">
+        <img src="images/photo2.jpg" alt="Salon">
+        <img src="images/photo3.jpg" alt="Cuisine">
+        <img src="images/photo4.jpg" alt="Jardin">
+    </div>
+
+    <div class="card">
+
+        <h2>Description</h2>
+
+        <p>
+           Elle se compose d'une cuisine équipée, salon en parquet avec insert double face. 
+		   Au 1er étage : 1 chambre en parquet avec dressing, 1 chambre ou bureau avec étagère, une salle de bain, une toilette separée.
+        </p>
+
+        <!-- <div class="price">
+            1 350 € / mois
+        </div> -->
+
+    </div>
+
+    <div class="card">
+
+        <h2>Caractéristiques</h2>
+
+        <div class="infos">
+
+            <div class="info">
+                📐 <strong>Surface :</strong><br>
+                150 m²
+            </div>
+
+            <div class="info">
+                🛏 <strong>Chambres :</strong><br>
+                3 ou 2 et 1 bureau
+            </div>
+
+            <div class="info">
+                🚿 <strong>Salles de bain :</strong><br>
+                1
+            </div>
+			
+			<div class="info">
+                🚿 <strong>Wc séparé :</strong><br>
+                1
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Équipements</h2>
+
+        <ul>
+            <li>Cuisine équipée</li>
+            <li>Chauffage central mazout</li>
+            <li>Cassette double face cuisine, salle à manger/salon</li>
+            <li>Double vitrage</li>
+            <li>Cave/buanderie</li>
+            <li>Grenier</li>
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Localisation</h2>
+
+        <p>
+            Située à proximité des commerces, écoles, transports en commun et espaces verts.
+        </p>
+
+        <br>
+		
+	   <iframe 
+	   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2546.765896594444!2d4.80050147682383!3d50.33361869576876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c1915f3abf5987%3A0x43f9f15b440060fd!2sRue%20de%20la%20Blanchisserie%2C%205537%20Anh%C3%A9e!5e0!3m2!1sfr!2sbe!4v1785590419786!5m2!1sfr!2sbe" 
+	   width=100%
+	   height="350" 
+	   style="border:0border-radius:8px;">
+	   </iframe>
+       
+
+    </div>
+
+    <div class="contact">
+
+        <h2>Intéressé ?</h2>
+
+        <p>
+            Contactez-nous pour organiser une visite.
+        </p>
+
+        <a href="mailto:jubenoit007@gmail.com" class="btn">
+            Demander une visite
+        </a>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 
+</footer>
+
+</body>
+</html>
